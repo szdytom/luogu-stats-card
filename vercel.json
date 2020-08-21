@@ -4,7 +4,7 @@
   ],
   "routes": [
     { "src": "/practice/(?<id>[^/]*)", "dest": "/api?id=$id" },
-    { "src": "/", "status": 301, "headers": { "Location": "https://github.com/wao3/luogu-stats-card" } }
+    { "src": "/", "status": 301, "headers": { "Location": "https://www.luogu.com.cn" } }
   ],
   "regions": ["hkg1"]
 }
