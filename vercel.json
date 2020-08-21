@@ -1,0 +1,10 @@
+{
+  "builds": [
+    { "src": "api/*.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/practice/(?<id>[^/]*)", "dest": "/api?id=$id" },
+    { "src": "/", "status": 301, "headers": { "Location": "https://github.com/wao3/luogu-stats-card" } }
+  ],
+  "regions": ["hkg1"]
+}
